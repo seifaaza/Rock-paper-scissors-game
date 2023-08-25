@@ -1,22 +1,22 @@
 
 function getComputerChoice(){
-    let choices = ["hajra", "war9a", "m9as"]
+    let choices = ["rock", "paper", "scisors"]
   const random = Math.floor(Math.random() * choices.length);
   return choices[random]
 }
   
 function playRound(playerSelection, computerSelection){
-  if(computerSelection == "hajra" && playerSelection == "m9as") {
+  if(computerSelection == "rock" && playerSelection == "scisors") {
     return "You lose !"
-  } else if(computerSelection == "hajra" && playerSelection == "war9a") {
+  } else if(computerSelection == "rock" && playerSelection == "paper") {
     return  "You win !"
-  } else if(computerSelection == "war9a" && playerSelection == "m9as") {
+  } else if(computerSelection == "paper" && playerSelection == "scisors") {
     return  "You win !"
-  } else if(computerSelection == "war9a" && playerSelection == "hajra") {
+  } else if(computerSelection == "paper" && playerSelection == "rock") {
     return "You lose !"
-  } else if(computerSelection == "m9as" && playerSelection == "war9a") {
+  } else if(computerSelection == "scisors" && playerSelection == "paper") {
     return "You lose !"
-  } else if(computerSelection == "m9as" && playerSelection == "hajra") {
+  } else if(computerSelection == "scisors" && playerSelection == "rock") {
     return  "You win !"
   } 
   else if(computerSelection == playerSelection) {
